@@ -48,7 +48,7 @@ public class Pattern_2 {
         line(numberoflines,numberoflines);
     }
     public static void main(String[] args) {
-        pattern(5);
+        pattern(6);
         
     }
 
