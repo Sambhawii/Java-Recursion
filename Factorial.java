@@ -17,3 +17,26 @@ public class Factorial {
     }
     
 }
+
+//By user input
+
+public class Recursion {
+    static int factorial(int num){
+        //termination case:
+        if(num==1){
+            return num;
+        }
+        //small problem is n*(n-1) + put in cycle
+        return(num * factorial(num-1));
+    }
+    public static void main(String[] args) {
+        System.out.println("Enter Number");
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int result = factorial(x);
+
+        System.out.println("Factorial is :" + result);
+    }
+    
+}
+
