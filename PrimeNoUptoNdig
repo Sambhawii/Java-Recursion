@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class PrimeNum2 {
+    public static void show(int n){
+        if(n==1){
+            return ;
+        }
+        show(n-1);
+         if(IsPrime(n,2) ==1){
+            list.add(n);
+         }
+        }
+    static ArrayList<Integer> list = new ArrayList<Integer>();
+
+    public static int IsPrime(int numb ,int i){
+            if(i<numb){
+                if(numb%i!=0){
+                    return IsPrime(numb,++i);
+                }
+                else{
+                    return 0;
+                }
+            }
+            return 1;
+        }
+        public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter Number");
+        int num = scan.nextInt();
+        show(num);
+        System.out.println(list);
+    }
+}
