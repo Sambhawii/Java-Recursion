@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Fib {
+    static void fibseries(int num,int a,int b){
+        if(num==0){
+            return;
+        }
+
+        int c = a+b;
+        list.add(a);
+
+        fibseries(num-1, b, c);
+    }
+    static ArrayList<Integer> list = new ArrayList<>();
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter Number Of Count");
+        int count = scan.nextInt();
+        int a =0;
+        int b= 1;
+        fibseries(count,a,b);
+        System.out.println(list);
+    }
+    
+}
