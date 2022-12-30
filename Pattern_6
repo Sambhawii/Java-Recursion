@@ -8,7 +8,7 @@
 //   *    *  
 //  *      *
 // *        *
-public class Pattern_8 {
+public class Pattern_6 {
     static void space(int noofspaces)
     {
         if(noofspaces==0)
