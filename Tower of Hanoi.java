@@ -4,7 +4,7 @@ class GFG {
 static void tower(int n, char sourcePole,
                   char destinationPole, char auxiliaryPole)
 {
-    // Base case (termination condition)
+    // Base case
     if (0 == n)
     return;
  
