@@ -1,21 +1,21 @@
-// public class Count_digR {
+public class Count_digR {
 
-//     public static int countDig(int num, int count) {
-//         if (num == 0) {
-//             return count;
-//         }
-//         return countDig(num / 10, count + 1);
+    public static int countDig(int num, int count) {
+        if (num == 0) {
+            return count;
+        }
+        return countDig(num / 10, count + 1);
 
-//     }
+    }
 
-//     public static void main(String[] args) {
-//         int num = 3412;
-//         int result = countDig(num, 0);
-//         System.out.println(result);
+    public static void main(String[] args) {
+        int num = 3412;
+        int result = countDig(num, 0);
+        System.out.println(result);
 
-//     }
+    }
 
-// }
+}
 //-----------------------------------------------------------------------------------
 
 //when count is not there
