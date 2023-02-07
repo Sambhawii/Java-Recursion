@@ -1,6 +1,21 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+//through recursion
+public class FibbSeries {
 
+    public static int fibb(int n) {
+        // termination case
+        if (n <= 1) {
+            return 1;
+        }
+        return fibb(n - 1) + fibb(n - 2);
+    }
+
+    public static void main(String[] args) {
+        int x = fibb(6);
+        System.out.println(x);
+    }
+}
+
+//THROUGH USER INPUT
 public class Fib {
     static void fibseries(int num,int a,int b){
         if(num==0){
